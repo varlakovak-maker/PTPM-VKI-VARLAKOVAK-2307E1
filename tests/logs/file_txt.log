@@ -1,0 +1,50 @@
+2026-10-08 11:27:54 | [INFO   ] | Получен запрос регистрации: login=john_doe, password=********, confirmation=
+2026-10-08 11:27:54 | [WARNING] | Регистрация отклонена: Подтверждение пароля не может быть пустым
+2026-10-08 11:27:54 | [INFO   ] | Получен запрос регистрации: login=, password=********, confirmation=********
+2026-10-08 11:27:54 | [WARNING] | Регистрация отклонена: Логин не может быть пустым
+2026-10-08 11:27:54 | [INFO   ] | Получен запрос регистрации: login=john_doe, password=********, confirmation=********
+2026-10-08 11:27:54 | [WARNING] | Регистрация отклонена: Пароль должен содержать хотя бы одну заглавную букву
+2026-10-08 11:27:54 | [INFO   ] | Получен запрос регистрации: login=john_doe, password=********, confirmation=********
+2026-10-08 11:27:54 | [WARNING] | Регистрация отклонена: Пароль и подтверждение пароля не совпадают
+2026-10-08 11:27:54 | [INFO   ] | Получен запрос регистрации: login=12345, password=********, confirmation=********
+2026-10-08 11:27:54 | [ERROR  ] | Произошла ошибка при регистрации
+Traceback (most recent call last):
+  File "C:\Users\arsen\PycharmProjects\PTPM-VKI-VARLAKOVAK-2307E1\tests\..\src\my_project.py", line 78, in registration
+    valid, message = check_login(login)
+                     ~~~~~~~~~~~^^^^^^^
+  File "C:\Users\arsen\PycharmProjects\PTPM-VKI-VARLAKOVAK-2307E1\tests\..\src\my_project.py", line 35, in check_login
+    if re.fullmatch(phone_pattern, login):
+       ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsen\AppData\Local\Programs\Python\Python314\Lib\re\__init__.py", line 172, in fullmatch
+    return _compile(pattern, flags).fullmatch(string)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: expected string or bytes-like object, got 'int'
+2026-10-08 11:27:54 | [INFO   ] | Получен запрос регистрации: login=john_doe, password=, confirmation=
+2026-10-08 11:27:54 | [WARNING] | Регистрация отклонена: Пароль не может быть пустым
+2026-10-08 11:27:54 | [INFO   ] | Получен запрос регистрации: login=john_doe, password=********, confirmation=********
+2026-10-08 11:27:54 | [INFO   ] | Регистрация пользователя john_doe успешно выполнена
+2026-10-08 11:30:01 | [INFO   ] | Получен запрос регистрации: login=john_doe, password=********, confirmation=
+2026-10-08 11:30:01 | [WARNING] | Регистрация отклонена: Подтверждение пароля не может быть пустым
+2026-10-08 11:30:01 | [INFO   ] | Получен запрос регистрации: login=, password=********, confirmation=********
+2026-10-08 11:30:01 | [WARNING] | Регистрация отклонена: Логин не может быть пустым
+2026-10-08 11:30:01 | [INFO   ] | Получен запрос регистрации: login=john_doe, password=********, confirmation=********
+2026-10-08 11:30:01 | [WARNING] | Регистрация отклонена: Пароль должен содержать хотя бы одну заглавную букву
+2026-10-08 11:30:01 | [INFO   ] | Получен запрос регистрации: login=john_doe, password=********, confirmation=********
+2026-10-08 11:30:01 | [WARNING] | Регистрация отклонена: Пароль и подтверждение пароля не совпадают
+2026-10-08 11:30:01 | [INFO   ] | Получен запрос регистрации: login=12345, password=********, confirmation=********
+2026-10-08 11:30:01 | [ERROR  ] | Произошла ошибка при регистрации
+Traceback (most recent call last):
+  File "C:\Users\arsen\PycharmProjects\PTPM-VKI-VARLAKOVAK-2307E1\tests\..\src\my_project.py", line 78, in registration
+    valid, message = check_login(login)
+                     ~~~~~~~~~~~^^^^^^^
+  File "C:\Users\arsen\PycharmProjects\PTPM-VKI-VARLAKOVAK-2307E1\tests\..\src\my_project.py", line 35, in check_login
+    if re.fullmatch(phone_pattern, login):
+       ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsen\AppData\Local\Programs\Python\Python314\Lib\re\__init__.py", line 172, in fullmatch
+    return _compile(pattern, flags).fullmatch(string)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: expected string or bytes-like object, got 'int'
+2026-10-08 11:30:01 | [INFO   ] | Получен запрос регистрации: login=john_doe, password=, confirmation=
+2026-10-08 11:30:01 | [WARNING] | Регистрация отклонена: Пароль не может быть пустым
+2026-10-08 11:30:01 | [INFO   ] | Получен запрос регистрации: login=john_doe, password=********, confirmation=********
+2026-10-08 11:30:01 | [INFO   ] | Регистрация пользователя john_doe успешно выполнена
