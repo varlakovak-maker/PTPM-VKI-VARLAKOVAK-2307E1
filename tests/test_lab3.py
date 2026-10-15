@@ -5,12 +5,12 @@ from unittest.mock import Mock, patch
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "src"))
 
-import main as app
-from controller import Controller
-from database import RegistrationDatabase
-from external_service import EmailService, ExternalService
-from registration_validator import RegistrationValidator
-from user_interface import ConsoleUserInterface, UserInterface
+import src.main as app
+from src.controller import Controller
+from src.database import RegistrationDatabase
+from src.external_service import EmailService, ExternalService
+from src.registration_validator import RegistrationValidator
+from src.user_interface import ConsoleUserInterface, UserInterface
 
 LOGIN = "john_doe"
 PASSWORD = "Пароль1!"
@@ -82,7 +82,7 @@ class TestRegistrationDatabase(unittest.TestCase):
 
 class TestRegistrationValidator(unittest.TestCase):
     def test_validate_delegates_to_registration_function(self):
-        with patch("registration_validator.registration", return_value=(True, "")) as fake:
+        with patch("src.registration_validator.registration", return_value=(True, "")) as fake:
             self.assertEqual(RegistrationValidator().validate(*KEY), (True, ""))
         fake.assert_called_once_with(*KEY)
 
